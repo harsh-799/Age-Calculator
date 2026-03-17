@@ -4,6 +4,8 @@ A simple **Age Calculator Web Application** built using **Java Servlets and JSP*
 
 ---
 
+
+
 ## 🚀 Purpose
 
 This project was created to get **hands-on experience with Servlets** and understand how:
@@ -17,6 +19,14 @@ It will also help me in building a **strong foundation for Spring Boot**, as Spr
 > ⚠️ This is a **basic learning project**, not a major production-level application.
 
 ---
+
+## 🌐 Live Demo
+
+🔗 **Live Application:**
+https://age-calculator-wwj4.onrender.com/
+
+> Try it out — enter your date of birth and see your age instantly 🎂
+
 
 ## 🧩 Features
 
