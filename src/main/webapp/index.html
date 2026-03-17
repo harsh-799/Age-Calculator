@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="blob"></div>
+<div class="blob"></div>
+
+<div class="container">
+    <h1>Age Calculator</h1>
+
+    <form action="calculate" method="get">
+        <input type="date" name="dob" id="dob" required>
+        <button type="submit">Calculate</button>
+    </form>
+</div>
+
+<!-- Logic for blocking the dates which is greater than today's date-->
+<script>
+    const today = new Date().toISOString().split("T")[0];
+    document.getElementById("dob").setAttribute("max", today);
+</script>
+</body>
+</html>

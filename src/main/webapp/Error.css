@@ -1,0 +1,93 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at top, #141e30, #243b55);
+            overflow: hidden;
+            color: white;
+        }
+
+        /* floating glow */
+        .blob {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            filter: blur(120px);
+            opacity: 0.5;
+            animation: move 10s infinite alternate ease-in-out;
+        }
+
+        .blob:nth-child(1) {
+            top: -100px;
+            left: -100px;
+        }
+
+        .blob:nth-child(2) {
+            bottom: -100px;
+            right: -100px;
+            animation-delay: 2s;
+        }
+
+        @keyframes move {
+            from { transform: translate(0,0); }
+            to { transform: translate(80px,80px); }
+        }
+
+        /* glass card */
+        .card {
+            backdrop-filter: blur(20px);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            animation: fadeUp 1s ease;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+
+        p {
+            font-size: 14px;
+            opacity: 0.85;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(135deg, #ff4b2b, #ff416c);
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
